@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+<title>Débuter avec Hugo</title>
+
+
+  <link rel="shortcut icon" href="http://localhost:1313/images/favicon.png" type="image/png"
+/>
+
+
+  <meta name="description" content="Nutrition Coach &amp; Chef Consultant"
+/>
+
+  <meta name="keywords" content="some, keywords, for, seo, you, know, google, duckduckgo, and, such"
+/>
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="http://localhost:1313/css/style.min.4814d2c1857f40274b8aad1d14182dfcc587123b16d6939aa11b4569d05d83f7.css" type="text/css" integrity="sha256-SBTSwYV/QCdLiq0dFBgt/MWHEjsW1pOaoRtFadBdg/c=" />
+
+<meta property="og:title" content="Débuter avec Hugo" />
+<meta property="og:description" content="Étape 1. Installer Hugo
+Allez sur la page de téléchargements de
+hugo et téléchargez la version
+appropriée à votre système d&rsquo;exploitation et votre architecture.
+Sauvegardez le fichier téléchargé à un endroit précis, afin de l&rsquo;utiliser dans
+l&rsquo;étape suivante.
+Des informations plus complètes sont disponibles sur la page
+installing hugo" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/posts/debuter-avec-hugo/" /><meta property="og:image" content="http://localhost:1313/images/cover-image.jpg" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2014-04-02T00:00:00+00:00" />
+<meta property="article:modified_time" content="2014-04-02T00:00:00+00:00" /><meta property="og:site_name" content="Jane Doe - Nutrition Coach &amp; Chef Consultant" />
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="http://localhost:1313/images/cover-image.jpg" /><meta name="twitter:title" content="Débuter avec Hugo"/>
+<meta name="twitter:description" content="Étape 1. Installer Hugo
+Allez sur la page de téléchargements de
+hugo et téléchargez la version
+appropriée à votre système d&rsquo;exploitation et votre architecture.
+Sauvegardez le fichier téléchargé à un endroit précis, afin de l&rsquo;utiliser dans
+l&rsquo;étape suivante.
+Des informations plus complètes sont disponibles sur la page
+installing hugo"/>
+
+<meta itemprop="name" content="Débuter avec Hugo">
+<meta itemprop="description" content="Étape 1. Installer Hugo
+Allez sur la page de téléchargements de
+hugo et téléchargez la version
+appropriée à votre système d&rsquo;exploitation et votre architecture.
+Sauvegardez le fichier téléchargé à un endroit précis, afin de l&rsquo;utiliser dans
+l&rsquo;étape suivante.
+Des informations plus complètes sont disponibles sur la page
+installing hugo"><meta itemprop="datePublished" content="2014-04-02T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2014-04-02T00:00:00+00:00" />
+<meta itemprop="wordCount" content="399"><meta itemprop="image" content="http://localhost:1313/images/cover-image.jpg" />
+<meta itemprop="keywords" content="" />
+
+
+<body>
+  <main class="content page-template page-Debuter avec Hugo">
+    <article class="post page">
+      <header class="post-header">
+        <a id="blog-logo" href="/"><i class="fa fa-chevron-left" aria-hidden="true"></i> Jane Doe - Nutrition Coach &amp; Chef Consultant</a>
+      </header>
+      <h1 class="post-title">Débuter avec Hugo</h1>
+      <section class="post-content">
+        <h2 id="étape-1-installer-hugo">Étape 1. Installer Hugo</h2>
+<p>Allez sur la page de téléchargements de
+<a href="https://github.com/spf13/hugo/releases">hugo</a> et téléchargez la version
+appropriée à votre système d&rsquo;exploitation et votre architecture.</p>
+<p>Sauvegardez le fichier téléchargé à un endroit précis, afin de l&rsquo;utiliser dans
+l&rsquo;étape suivante.</p>
+<p>Des informations plus complètes sont disponibles sur la page
+<a href="/overview/installing/">installing hugo</a></p>
+<h2 id="étape-2-compilez-la-documentation">Étape 2. Compilez la documentation</h2>
+<p>Hugo possède son propre site d&rsquo;exemple qui se trouve être également le site que
+vous lisez actuellement.</p>
+<p>Suivez les instructions suivante :</p>
+<ol>
+<li>Clonez le <a href="http://github.com/spf13/hugo">dépôt de hugo</a></li>
+<li>Allez dans ce dépôt</li>
+<li>Lancez Hugo en mode serveur et compilez la documentation</li>
+<li>Ouvrez votre navigateur sur http://localhost:1313</li>
+</ol>
+<p>Voici les commandes génériques correspondantes :</p>
+<pre><code>git clone https://github.com/spf13/hugo
+cd hugo
+/chemin/ou/vous/avez/installe/hugo server --source=./docs
+&gt; 29 pages created
+&gt; 0 tags index created
+&gt; in 27 ms
+&gt; Web Server is available at http://localhost:1313
+&gt; Press ctrl+c to stop
+</code></pre>
+<p>Lorsque vous avez cela, continuez le reste de ce guide sur votre version locale.</p>
+<h2 id="étape-3-changer-le-site-de-documentation">Étape 3. Changer le site de documentation</h2>
+<p>Arrêtez le processus de Hugo en pressant ctrl+c.</p>
+<p>Maintenant, nous allons relancer hugo, mais cette fois avec Hugo en mode de
+surveillance.</p>
+<pre><code>/chemin/vers/hugo/de/l-etape/1/hugo server --source=./docs --watch
+&gt; 29 pages created
+&gt; 0 tags index created
+&gt; in 27 ms
+&gt; Web Server is available at http://localhost:1313
+&gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
+&gt; Press ctrl+c to stop
+</code></pre>
+<p>Ouvrez votre <a href="https://vim.spf13.com">éditeur favori</a> et changer l&rsquo;une des
+sources des pages de contenu.
+Open your <a href="http://vim.spf13.com">favorite editor</a> and change one of the source
+content pages. Que diriez-vous de modifier ce fichier pour <em>résoudre une faute
+de typo</em>.</p>
+<p>Les fichiers de contenu peuvent être trouvés dans <code>docs/content/</code>. Sauf
+indication contraire, les fichiers sont situés au même emplacement relatif que
+l&rsquo;URL, dans notre cas <code>docs/content/overview/quickstart.md</code>.</p>
+<p>Modifiez et sauvegardez ce fichier. Notez ce qu&rsquo;il se passe dans le terminal.</p>
+<pre><code>&gt; Change detected, rebuilding site
+
+&gt; 29 pages created
+&gt; 0 tags index created
+&gt; in 26 ms
+</code></pre>
+<p>Rechargez la page dans votre navigateur et voyez que le problème de typo est
+maintenant résolu.</p>
+<p>Notez à quel point cela a été rapide. Essayez de recharger le site avant qu&rsquo;il
+soit fini de compiler.
+Notice how quick that was. Try to refresh the site before it&rsquo;s finished
+building. Je paris que vous n&rsquo;y arrivez pas.
+Le fait d&rsquo;avoir des réactions presque instantanées vous permet d&rsquo;avoir votre
+créativité fluide sans avoir à attendre de longues compilations.</p>
+<h2 id="step-4-amusez-vous">Step 4. Amusez-vous</h2>
+<p>Le meilleur moyen d&rsquo;apprendre quelque chose est de s&rsquo;amuser avec.</p>
+      </section>
+    </article>
+  </main>
+
+
+
+
+<footer class="site-footer">
+  <div class="inner">
+    
+
+    
+
+    
+      <section class="copyright">© Jane Doe</section>
+    
+
+    
+      <section>
+        <a href="https://themes.gohugo.io/hugo-scroll/" target="_blank" rel="noopener">Hugo Scroll</a> template
+      </section>
+    
+
+    
+  </div>
+</footer>
+
+
+    
+
+    
+    
+    
+    
+    
+
+    <script src="http://localhost:1313/js/script.min.7112b6ea0fe587bf799cbf42bb8276bcb36ec9cd921e2cfa9b35cefccacae0d0.js" integrity="sha256-cRK26g/lh795nL9Cu4J2vLNuyc2SHiz6mzXO/MrK4NA=" ></script>
+
+    
+    <script>cssVars();</script>
+
+    
+</body>
+</html>
