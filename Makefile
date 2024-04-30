@@ -26,8 +26,9 @@ delete: ## Deploy website
 	@helm uninstall secsite-hugo
 
 run: ## Run site in docker
-	docker run -p 8080:80 gytedocker/site
 	echo "Goto http://localhost:8080/"
+	docker run -p 8080:80 gytedocker/site
+	
 
 push: ## Piush to docker repo
 	@docker tag gytedocker/site:latest gytedocker/site:latest
