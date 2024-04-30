@@ -19,7 +19,7 @@ deploy: ## Deploy website
 		--wait \
 		--install \
 		--values helm/igyte-secsite/values.yaml \
-		--set image.repository=gytedocker/site \
+		--set image.repository=ifunky/site \
 		--set image.tag=latest
 
 delete: ## Deploy website
