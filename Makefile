@@ -19,7 +19,7 @@ deploy: ## Deploy website
 		--wait \
 		--install \
 		--values helm/igyte-secsite/values.yaml \
-		--set image.repository=ifunky/site \
+		--set image.repository=gytedocker/site \
 		--set image.tag=latest
 
 delete: ## Deploy website
@@ -33,3 +33,13 @@ run: ## Run site in docker
 push: ## Piush to docker repo
 	@docker tag gytedocker/site:latest gytedocker/site:latest
 	@docker push gytedocker/site:latest
+
+
+
+run: ## Run site in docker
+    echo "Goto http://localhost:8080/"
+    docker run -p 8080:80 gytedocker/site
+
+push: ## Push to docker repo
+    @docker tag gytedocker/site:latest gytedocker/site:latest
+    @docker push gytedocker/site:latest
