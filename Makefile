@@ -33,7 +33,8 @@ scan/dir: ## Scan image
 
 
 delete: ## Deploy website
-	@helm uninstall secsite-hugo
+	@helm uninstall secsite-hugo \
+	--namespace=igyte 
 
 run: ## Run site in docker
 	echo "Goto http://localhost:8080/"
