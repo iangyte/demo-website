@@ -17,8 +17,8 @@
  "description": "Theme Ananke",
  "devDependencies": {
   "auto-changelog": "^1.16.1",
-  "cssnano": "^3.10.0",
-  "postcss-cli": "^7.1.0",
+  "cssnano": "4.0.0-nightly.2020.1.11",
+  "postcss-cli": "8.0.0",
   "postcss-cssnext": "^2.10.0",
   "tachyons": "^4.9.1"
  },
